@@ -29,6 +29,7 @@ function pageReady() {
 function getUserMediaSuccess(stream) {
     localStream = stream;
     localVideo.src = window.URL.createObjectURL(stream);
+    remoteVideo.src = window.URL.createObjectURL(stream);
 }
 
 function getUserMediaError(error) {
