@@ -86,3 +86,18 @@ function gotMessageFromServer(message) {
         peerConnection.addIceCandidate(new RTCIceCandidate(signal.ice));
     }
 }
+
+
+function onAccept(){
+    console.log('onAccept');
+    Android.onAccept();
+}
+function onReject(){
+    console.log('onReject');
+    Android.onReject();
+}
+
+function onEnd(){
+    console.log('onEnd');
+    Android.onEnd();
+}
