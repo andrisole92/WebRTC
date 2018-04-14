@@ -5,6 +5,7 @@ window.RTCSessionDescription = window.RTCSessionDescription || window.mozRTCSess
 
 
 var localVideo;
+var localStream;
 var remoteVideo;
 var peerConnection;
 var peerConnectionConfig = {'iceServers': [{'url': 'stun:stun.services.mozilla.com'}, {'url': 'stun:stun.l.google.com:19302'}]};
